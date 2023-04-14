@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOKEPON</title>
+    <script src="../JS/mokepon.js"></script>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <section id="seleccionar-mascota">
+        <h1 id="titulo" class="titulo">Monkepon 🔥💧🌱</h1>
+        <h2 class="subtitulo">Elige tu mascota:</h2>
+        <div class="tarjetas">
+            <label for="hipodoge" class="tarjeta-de-mokepon">
+                <p>Hipodege</p>
+                <img src="../CSS/img/charmander.png" alt="Hipodege">
+            </label>
+            <input type="radio" name="mascota" id="hipodoge" />
+            <label for="capipepo" class="tarjeta-de-mokepon">
+                <p>Capipepo</p>
+                <img src="../CSS/img/scuirel.png" alt="Capipepo">
+            </label>
+            <input type="radio" name="mascota" id="capipepo" />
+            <label for="ratigueya" class="tarjeta-de-mokepon">
+                <p>Ratigueya</p>
+                <img src="../CSS/img/bulbasour.png" alt="Ratigueya">
+            </label>
+            <input type="radio" name="mascota" id="ratigueya" />
+        </div>
+        <button id="boton-mascota">Continuar</button>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <div class="ataque">
+            <h1 id="titulo" class="titulo">Monkepon 🔥💧🌱</h1>
+            <h2 class="subtitulo">Elige un ataque</h2>
+            <div #boton-ataque>
+                <button class="botones" id="boton-fuego">Fuego 🔥</button>
+                <button class="botones" id="boton-agua">Agua 💧</button>
+                <button class="botones" id="boton-tierra">Tierra 🌱</button>
+            </div>
+            <div class="estado">
+                <div class="combate-ataque">
+                    <p><span id="vida-jugador">3</span>❤️</p>
+                    <p id="estado-jugador"><span id="mascota-jugador"></span></p>
+                    <div class="mensajes-combate" id="mensaje-Jugador"><p></p></div>
+                </div>
+                <div class="combate-ataque">
+                    <p><span id="vida-enemigo">3</span>❤️</p>
+                    <p id="estado-enemigo"><span id="mascota-enemigo"></span></p>
+                    <div class="mensajes-combate" id="mensaje-Enemigo"><p></p></div>
+                </div>
+            </div>
+            <div id="reinicio">
+                <button id="boton-reiniciar">reiniciar</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

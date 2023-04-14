@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Josefin+Sans:wght@500&display=swap');
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'DynaPuff', cursive;
+    background-color: #F5F3C1;
+    background-image: url(../CSS/img/fondo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /*Centra filas*/
+    align-items: center;        /*Centra comulnas*/
+    height: 100vh;
+}
+
+.titulo {
+    width: 460px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #2F0F5D;
+    font-size: 50px;
+    border-radius: 40px;
+}
+
+.subtitulo{
+    color: #0081C9;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 300px;
+    height: 130px;
+    padding: 10px;
+    box-sizing: border-box; /*No altera el tamaño total de la box*/
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: #F5F3C1;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.tarjeta-de-mokepon img{
+    height: 100px;
+    width: 90px;
+    margin-left: 10px;
+}
+
+.tarjeta-de-mokepon:hover{
+    cursor: pointer;
+    background-color: #F8F988;
+}
+
+input{
+    display: none;
+}
+
+#boton-mascota , #boton-reiniciar{
+    width: 200px;
+    height: 40px;
+    margin-top: 60px;
+    border-radius: 20px;
+    background-color: #576CBC;
+    color: azure;
+    font-family: 'DynaPuff', cursive;
+    font-size: 30px;
+}
+
+#boton-mascota:hover, #boton-reiniciar:hover{
+    cursor: pointer;
+    background-color: #433be2;
+}
+
+.ataque{
+    display: flex;
+    justify-content: center;    /*Centra filas*/
+    align-items: center;        /*Centra comulnas*/
+    flex-direction: column;
+    height: 100vh;
+}
+
+.botones{
+    width: 150px;
+    height: 50px;
+    font-family: 'DynaPuff', cursive;
+    font-size: 30px;
+    border-radius: 20px;
+    margin: 0 20px ;
+}
+
+#boton-fuego{
+    background-color: #FF414D;
+    box-shadow: 5px 8px 5px #ac323a;
+}
+
+#boton-fuego:hover{
+    background-color: red;
+    color: #000000;
+}
+
+#boton-agua{
+    background-color: #51EAEA;
+    box-shadow: 5px 8px 5px #2ca3a3;
+}
+
+#boton-agua:hover{
+    background-color: blue;
+    color: #000000;
+}
+
+#boton-tierra{
+    background-color: #2fca5b;
+    box-shadow: 5px 8px 5px #138a34;
+}
+
+#boton-tierra:hover{
+    background-color: green;
+    color: #000000;
+}
+
+.estado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 100px;
+}
+
+.estado > p{
+    width: 400px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.combate-ataque{
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    color: beige;
+    background-color: #0081C9;
+}
+
+#vida-jugador, #vida-enemigo{
+    color: #000000;
+}
+
+#boton-reiniciar{
+    margin-top: 20px;
+}
+
+.mensajes-combate{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensaje-Jugador > p,#mensaje-Enemigo > p{
+    margin-top: 2px;
+}
+
